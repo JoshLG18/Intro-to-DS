@@ -1,0 +1,84 @@
+\documentclass[12pt,a4paper]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{titlesec}
+
+% ---------- Formatting ----------
+\setstretch{1.25}
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+
+% ---------- Title Info ----------
+\title{<Document Title>}
+\author{<Your Name>}
+\date{\today}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+A short summary of the purpose, content, and key points of the document.
+Keep it concise — typically 100–150 words.
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+% ============================================================
+% ===================== MAIN BODY =============================
+% ============================================================
+
+\section{Introduction}
+Provide background, motivation, and context for your work. 
+Explain the objectives and structure of the document.
+
+\section{Methodology}
+Describe your approach, framework, or process. 
+Include figures, equations, or tables as needed.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{example-figure.png}
+    \caption{Example figure caption.}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{lcc}
+        \toprule
+        Variable & Description & Value \\
+        \midrule
+        A & Example 1 & 10.5 \\
+        B & Example 2 & 7.3 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Example table caption.}
+\end{table}
+
+\section{Results / Discussion}
+Present and interpret findings or key insights. 
+Use visuals and clear subheadings where helpful.
+
+\section{Conclusion}
+Summarize the document’s main points and implications. 
+Optionally include next steps or recommendations.
+
+% ============================================================
+% ==================== REFERENCES =============================
+% ============================================================
+
+\newpage
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document}
