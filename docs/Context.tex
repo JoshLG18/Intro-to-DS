@@ -1,5 +1,5 @@
 \documentclass[english]{article}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{babel}
 \usepackage{amsmath}
@@ -7,76 +7,107 @@
 \usepackage{hyperref}
 \usepackage{titling}
 \usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{cite}  
+\usepackage{setspace}
+\usepackage[labelfont=bf,textfont=bf]{caption}
 
-\setlength{\droptitle}{-2em} 
-\posttitle{\vspace{-3em}} 
 
 \pagestyle{fancy}
 \fancyhf{}
+
 \renewcommand{\headrulewidth}{0pt}
 \setlength{\headheight}{40pt} 
-\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
 
 \begin{document}
 
 %-------------------------------------------------------%
 
-\title{\bf How Data and Analytics Influence Student Investment Choices}
+\title{\bf Navigating FinTech: The Role of Financial and Digital Literacy in Student Investment Decisions}
 \date{}
 \maketitle
 \thispagestyle{fancy}
 
 %-------------------------------------------------------%
+\vspace{-8em}
 \section{Introduction}
-Over the past few years, digital platforms like Vanguard, eToro or Trading212 have allowed people to invest
-with just a few taps.This has encouraged many students to start investing earlier, 
-often relying on app-based data such as portfolio performance or stock market analytics to advise their decisions.
-However, whilst these tools provide access to this data, they also assume that the user is able to interpret 
-the financial information and make fact based investment decisions.
 
-Experts agree that financial knowledge is strongly related to better financial behaviours
-(Rodriguez-Correa, 2025). However, research has shown that many young adults struggle
-with financial literacy, which can lead to poor financial decision making and have potential lifelong 
-impacts (Lusardi, 2019). Financial literacy refers to the ability of indivudlas to make clear decisions 
-about their financial life based on judgements formed from training in the topics about money, credit, 
-savings and many more (Rodriguez-Correa, 2025).
+\vspace{-0.5em}
 
-However, it is not just financial literacy that is important. With the rise of these investment platforms relying on
-visualisations to present the data in a clear and concise manner, digital financial literacy (DFL) has become increasingly important.
-Studies show that a higher digital literacy is linked to greater financial confidence and more informed decisions. 
-For instance, Basar et al. (2025) found that digital financial literacy, alongside the use of FinTech platforms, 
-has a positive relationship with saving habits and responsible financial behaviour. 
-While existing research highlights the important of financial literacy and DFL, few studies have explored how these
-infuence actual investment behaviour in student populations.
+Over the past few years, digital investment platforms like Vanguard, eToro or Trading212 have made it easier for people to invest\cite{Spear2024-iv}. 
+This has encouraged many students to start investing earlier, 
+usually relying on app-based data such as portfolio performance or stock market analytics to guide their decisions\cite{Freibauer2024-qo}.
+However, while these tools provide access to this data, they assume that the user is able to interpret 
+the financial information and make informed investment decisions.
 
-This study will explore how University of Exeter students use investment platforms and how their financial
-and digital literacy affect their investment behaviour. By understanding how certain students engage with data 
-and analytics, the research aims to discover whether these digital tools are effectively guiding better decisions or
-introducing other challenges. The findings from this research could help improve university initiatives on financial
-education and inform how investment platforms present data to young investors.
+However, many young adults struggle with financial literacy, which is the ability of individuals to make clear decisions 
+about their financial life based on knowledge from education, in areas surrounding money, credit, 
+savings and many others\cite{Rodriguez-Correa2025-ld}.
+Research has found that increased financial knowledge can be strongly related to better financial behaviours\cite{Rodriguez-Correa2025-ld}.
+This lack of financial literacy, within student populations is so significant the UK government recently introduced mandatory financial 
+education into school curriculum up until 18 years old\cite{UK_Government}. The lack of education can lead to poor financial decision making, introducing potential lifelong 
+impacts and financial pressures affecting quality of life\cite{Lusardi2019-pt}.
+
+However, it is not just financial literacy that carries importance. With investment platforms relying on
+visualisations to present the data in a clear and concise manner, digital literacy has become pivotal.
+Basar et al.\cite{Basar2025-xg} found that digital financial literacy, alongside the use of FinTech platforms, 
+has a positive impact on saving habits and responsible financial behaviour. 
+This existing research highlights the importance of financial and digital literacy, however, few studies have 
+discussed their influence on investment behaviours in student populations.
+
+This study will investigates how University of Exeter students interact with investment platforms, along with how their financial
+and digital literacy affect investment behaviours. By understanding how students engage with these platforms,
+the research aims to discover whether digital tools are effectively influencing better decisions or
+introducing other challenges. The findings from this research could help improve financial
+education initiatives and inform how investment platforms present data to investors.
+
+\vspace{-1em}
 
 %-------------------------------------------------------%
 \section{Data Visualisation Research}
 
-%-------------------------------------------------------%
-% Figures and tables
+\vspace{-0.5em}
+
+Figures \ref{Fig1}, \ref{Fig2}, and \ref{Fig3} show visualisations from existing research
+that evaluate financial literacy, digital literacy, and investment behaviours. These figures influenced
+the design of visualisations within this research project, ensuring clarity and effective communication of findings.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../figures/ContextFig3.png} 
+    \caption{Box Plot by Luksander et al.\cite{Luksander2014-in}}
+    \label{Fig1}
+\end{figure}
+
 \clearpage
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{../figures/ContextFig1.png} 
+    \vspace{-1em}
+    \caption{Bar Chart by Lusardi et al.\cite{Lusardi2019-pt}}
+    \label{Fig2}
+\end{figure}
+
+\vspace{-2em}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.55\textwidth]{../figures/ContextFig2.png} 
+    \vspace{-1em}
+    \caption{Correlation Matrix with Histograms by Cannistra et al.\cite{Cannistra2022-lr}}
+    \label{Fig3}
+\end{figure}
+
+\vspace{-2.5em}
 
 %-------------------------------------------------------%
-\clearpage
-% Include your references here.
-\bibliographystyle{plain}
-\bibliography{references}
 
-%-------------------------------------------------------%
-
-%-------------------------------------------------------%
-\clearpage
-% Include your appendix here, if necessary.
-% \section*{Appendix}
-% % Appendix (optional, unlimited)
-% % Code snippets, supplementary figures, tables, or additional materials.
-% % Will not be marked but can provide supporting evidence.
+% References
+\begin{spacing}{0.2}
+    \bibliographystyle{IEEEtran}
+    \bibliography{../references/context_references}
+\end{spacing}
 
 %-------------------------------------------------------%
 \end{document}

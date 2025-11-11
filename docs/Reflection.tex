@@ -1,84 +1,127 @@
-\documentclass[12pt,a4paper]{article}
-
-% ---------- Packages ----------
-\usepackage[margin=1in]{geometry}
-\usepackage{setspace}
+\documentclass[english]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage{float}
-\usepackage{caption}
-\usepackage{booktabs}
 \usepackage{hyperref}
-\usepackage{natbib}
-\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage[round,comma]{natbib}
 
-% ---------- Formatting ----------
-\setstretch{1.25}
-\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
-\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+\pagestyle{fancy}
+\fancyhf{}
 
-% ---------- Title Info ----------
-\title{<Document Title>}
-\author{<Your Name>}
-\date{\today}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{36pt} 
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
 
 \begin{document}
+
+%-------------------------------------------------------%
+\title{\bf Peer-Review and AI-Use Reflection}
+\date{}
 \maketitle
-\thispagestyle{empty}
+\thispagestyle{fancy}
 
-\begin{abstract}
-A short summary of the purpose, content, and key points of the document.
-Keep it concise — typically 100–150 words.
-\end{abstract}
+\vspace{-8em}
 
-\newpage
-\tableofcontents
-\newpage
+\section{Use of AI in Research}
 
-% ============================================================
-% ===================== MAIN BODY =============================
-% ============================================================
+\vspace{-0.5em}
 
-\section{Introduction}
-Provide background, motivation, and context for your work. 
-Explain the objectives and structure of the document.
+Throughout this research, I used three AI tools: Gemini for initial topic brainstorming, plan development, 
+and code reviews, Perplexity for summerisation of large policy documents and for reviewing
+and providing feedback on drafts and finally Github Copilot for real-time coding bug-fixes.
 
-\section{Methodology}
-Describe your approach, framework, or process. 
-Include figures, equations, or tables as needed.
+\vspace{-1em}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{example-figure.png}
-    \caption{Example figure caption.}
-\end{figure}
+\subsection{Idea Generation, Planning and Review}
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{lcc}
-        \toprule
-        Variable & Description & Value \\
-        \midrule
-        A & Example 1 & 10.5 \\
-        B & Example 2 & 7.3 \\
-        \bottomrule
-    \end{tabular}
-    \caption{Example table caption.}
-\end{table}
+\vspace{-0.5em}
 
-\section{Results / Discussion}
-Present and interpret findings or key insights. 
-Use visuals and clear subheadings where helpful.
+Gemini proved to be valuable in the brainstorming phase; identifying 10 topic
+areas for potential research, however, these were broad which encouraged independent thinking to narrow the ideas
+down to my final research question 'Navigating FinTech: The Role of Financial and 
+Digital Literacy in Student Investment Decisions'. AI provided a good starting place however, to verify
+the topic discussed I used Google Scholar and the University library to find existing literature to help 
+identify gaps that my research could fill.
 
-\section{Conclusion}
-Summarize the document’s main points and implications. 
-Optionally include next steps or recommendations.
+To understand University requirements for ethical research, I chose to use Perplexity to summarise and review 
+ethics and policy documentation. This helped the efficiency of my research by extracting key information from these large 
+documents effectively. I reviewed the source texts to ensure accuracy and find any missing information or
+hallucinations in AI responses. Perplexity was also very useful when providing feedback on structure, 
+clarity and grammar within my drafts. I found that AI provided clear suggestions for improving my writing, however, 
+I had to be careful to be critical of its recommendations as it could change the intended meaning 
+of my report.
 
-% ============================================================
-% ==================== REFERENCES =============================
-% ============================================================
+\vspace{-1em}
 
-\newpage
-\bibliographystyle{apalike}
-\bibliography{references}
+\subsection{Coding Tasks}
+
+\vspace{-0.5em}
+
+Gemini was also used when performing code reviews to help identify any issues with data representation, 
+or clean and optimise my code. To verify the recommendations, 
+I implemented everything line by line, rather than generating the code and copying it verbatum, 
+ensuring I understood any modifications being made.
+
+Furthermore, whilst writing my code, Github Copilot was enabled allowing for 
+real-time bug-fixes; however, I found the constant code suggestions distracting as it would often recommend
+complex code where simpler approaches would be a better alternative. This highlighted an important limitation;
+over-reliance on autocomplete which can reduce understanding of how and why the code works, potentially
+limiting learning.
+
+\vspace{-1.25em}
+
+
+\section{Peer Review}
+
+\vspace{-0.75em}
+
+\subsection{Feedback}
+
+\vspace{-0.5em}
+
+
+The peer review process provided valuable feedback to improve my research. 
+The feedback highlighted areas where I could improve clarity, especially in my figures and explanations of 
+statistical analysis. For example, I was advised to add more detailed captions to my figures to help readers
+interpret the data more easily. Furthermore, I received suggestions to increase the size of some of my figures
+to ensure they were easily readable. As well as, some minor grammatical feedback to enhance the overall
+quality of my writing alongside including a clearer explanation of my research focus within the introduction.
+
+\vspace{-1em}
+
+\subsection{Actions}
+
+\vspace{-0.5em}
+
+I have made the recommended changes to my figures, including adding more detailed captions and increasing their size.
+Additionally, I have reviewed the explanation of some of my statistical analysis to ensure it is clear and accessible
+to readers. Finally, I have proofread addressing any grammatical issues.
+As well as, revising my introduction to clearly state my research focus and objectives.
+
+\vspace{-1.25em}
+
+\section{Focus for Review}
+
+\vspace{-0.5em}
+
+I believe that my research could benefit from further review in some key areas; the first being
+whether the questions that I used to calculate financial and digital literacy, in addition to investment
+behaviour, were the most accurate to quantify such characteristics. As I am still uncertain if there are 
+other questions that could represent these skills more accurately. For example, lots of my questions
+also test mathematical ability, which may not be a true reflection of someone's financial or digital literacy.
+
+Also, my research would benefit from reviewing whether my references to University of Exeter policies are 
+accurate. While I carefully reviewed these documents with the help of Perplexity, I found it challenging to 
+understand where and when to apply particular policy clauses within my research design. Expert guidance
+on the correct institutional interpretation would strengthen my Data Management and Ethics sections.
+
+Futhermore, I would appreciate feedback on my statistical analysis methods, specifically whether the tests
+I chose were the most appropriate for my data and research questions. As well as, whether including the correlation plot
+rather than the model diagnostics plots within my final report was best to illustrate my findings.
 
 \end{document}

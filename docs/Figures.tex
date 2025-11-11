@@ -1,0 +1,135 @@
+\documentclass[english]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titling}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{40pt} 
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+
+%-------------------------------------------------------%
+
+\title{\bf Figures}
+\date{}
+\maketitle
+\thispagestyle{fancy}
+
+\vspace{-8em}
+
+\begin{figure}[h!]
+    \includegraphics[width=1\textwidth]{../figures/combined_platform_analysis.png} 
+    \vspace{-2em}
+    \textbf{\caption{Investment Platform Engagement Among University of Exeter Students (N = 1000).}}
+  
+    \textbf{Left:} This stacked bar chart shows a potential correlation between academic background and 
+    investment activity. Business/Economics students demonstrated the highest 
+    engagement, with $80\%$ reporting platform use, contrasting with other fields
+    like Humanities/Arts, where most students reported no usage. This relationship could suggest that financial
+    literacy is a key driver in initial investment participation.
+    
+    \vspace{0.5em}
+
+    \textbf{Right:} Among all students, the equal largest 
+    group ($380$) were non-investors, but for those who do invest, Trading apps 
+    (e.g., Trading212, Vanguard) were the majority choice, used by approximately 380 
+    students, nearly double the usage of Robo-advisors ($200$). This
+    suggests a strong preference among the student population to have full control over
+    their investments.
+\end{figure}
+
+%-------------------------------------------------------%
+
+\begin{figure}[h!]
+    \includegraphics[width=\textwidth]{../figures/score_histograms.png}
+    \vspace{-2em}
+    \textbf{\caption{Distribution of Financial and Digital Literacy Scores Among Students (N = 1000).}}
+
+    This figure displays the distribution of scores on the financial and digital literacy assessments in the
+    student population.
+
+    \vspace{0.5em}
+
+    \textbf{Financial Literacy (Left):} Financial literacy shows a normal distribution
+    (bell-shaped), centered around a score of 3 to 4 out of 7. The highest frequency being 
+    observed at a score of 3, with over 200 students achieving this score. This pattern 
+    suggests that while most students have a moderate or foundational level of financial
+    knowledge, a majority struggled to answer half the questions correctly,
+    supporting existing research on low financial literacy among young adults.
+
+    \vspace{0.5em}
+
+    \textbf{Digital Literacy (Right):} This distribution is negatively skewed where, 
+    the highest frequencies are concentrated 
+    between scores of 4 and 6, with a large number of students scoring 7. 
+    This indicates a generally higher level of digital literacy compared to financial
+    literacy among the student population, which reinforces the need for financial education initiatives. 
+   
+\end{figure}
+
+\clearpage
+
+%-------------------------------------------------------%
+
+\begin{figure}[h!]
+    \includegraphics[width=\textwidth]{../figures/combined_box_score_analysis_with_anova.png}
+    \vspace{-3em}
+    \textbf{\caption{Financial Literacy in Student Subgroups with ANOVA and Tukey HSD (N = 1000).}}
+    The analysis of financial literacy amongst student subgroups reveals that both 
+    academic background and investment experience have clear impacts on the level financial 
+    knowledge. 
+
+    \vspace{0.25em}
+
+    \textbf{Left:} The difference in financial literacy scores by study field was shown to be
+    significant ($F = 300.31, p = 0.000$), with Business/Economics 
+    students recording the highest median score $5/7$ and the lowest variance.
+    Post-hoc Tukey HSD tests found that Business/Economics students had significantly higher
+    financial literacy than all other fields (all $p < 0.05$), further reiterating the need for education initiatives across all courses.
+    
+    \vspace{0.25em}
+
+    \textbf{Right:} Similarly, a significant difference was observed 
+    across investment experience groups ($F = 7.62, p = 0.000$), where the non-investor group had 
+    the lowest median score $3/7$. Post-hoc Tukey HSD tests reinforce that non-investors
+    had significantly lower financial literacy than all other groups (all $p < 0.05$),
+    suggesting that investment experience is associated with higher financial literacy.
+\end{figure}
+
+%-------------------------------------------------------%
+
+\begin{figure}[h!]
+    \includegraphics[width=\textwidth]{../figures/combined_correlation_and_feature_importance.png}
+    \vspace{-2.5em}
+    \textbf{\caption{Multivariate Correlation and Regression Analysis with Feature Importance (N = 1000).}}
+    \textbf{Left:}
+    The pearson correlation matrix shows clear positive linear relationships, 
+    the highest being between financial literacy and being a Business/Economics student ($r=0.60$), 
+    as well as with investment behaviour ($r=0.47$) and confidence in financial terms ($r=0.42$). 
+    Digital literacy also shows some correlation with investment behaviour ($r=0.38$), indicating
+    that higher literacy levels may be associated with better investment decisions.
+
+    \vspace{0.25em}
+
+    \textbf{Right:} The bar chart displays the variable importance from a linear
+    regression model predicting investment behaviour ($R^2=0.41$), indicating that the model explains 41\%
+    of the variation in investment behaviour. This suggests that
+    other factors may play a significant role such as social or economic influences.
+    The model shows that confidence in financial terms ($\beta = 0.62$) and reliance on data and analytics ($\beta = 0.58$) 
+    are the strongest
+    positive predictors. Interestingly, digital literacy ($\beta = 0.47$) shows a slightly greater impact than 
+    financial literacy ($\beta = 0.40$), contradicting the correlations found from the above matrix, 
+    suggesting that psychological factors and digital engagement are greater influencers of investment behaviour 
+    than measured financial knowledge.
+\end{figure}
+
+\end{document}
+

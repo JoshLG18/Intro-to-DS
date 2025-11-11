@@ -1,79 +1,169 @@
-\documentclass[12pt,a4paper]{article}
-
-% ---------- Packages ----------
-\usepackage[margin=1in]{geometry}
-\usepackage{setspace}
+\documentclass[english]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage{float}
-\usepackage{caption}
-\usepackage{booktabs}
 \usepackage{hyperref}
-\usepackage{natbib}
-\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{cite} 
 
-% ---------- Formatting ----------
-\setstretch{1.25}
-\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
-\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+\pagestyle{fancy}
+\fancyhf{}
 
-% ---------- Title Info ----------
-\title{<Document Title>}
-\author{<Your Name>}
-\date{\today}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{36pt} 
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm,marginparwidth=2cm]{geometry}
 
 \begin{document}
+
+%-------------------------------------------------------%
+\title{\textbf{Data Management Plan, and Ethics Review}}
+\date{}
 \maketitle
-\thispagestyle{empty}
-
-\begin{abstract}
-A short summary of the purpose, content, and key points of the document.
-Keep it concise — typically 100–150 words.
-\end{abstract}
-
-\newpage
-\tableofcontents
-\newpage
-
-% ============================================================
-% ===================== MAIN BODY =============================
-% ============================================================
-
-\section{Introduction}
-Provide background, motivation, and context for your work. 
-Explain the objectives and structure of the document.
-
-\section{Methodology}
-Describe your approach, framework, or process. 
-Include figures, equations, or tables as needed.
+\thispagestyle{fancy}
 
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{lcc}
-        \toprule
-        Variable & Description & Value \\
-        \midrule
-        A & Example 1 & 10.5 \\
-        B & Example 2 & 7.3 \\
-        \bottomrule
-    \end{tabular}
-    \caption{Example table caption.}
-\end{table}
 
-\section{Results / Discussion}
-Present and interpret findings or key insights. 
-Use visuals and clear subheadings where helpful.
+%-------------------------------------------------------%
+\vspace{-8.75em}
 
-\section{Conclusion}
-Summarize the document’s main points and implications. 
-Optionally include next steps or recommendations.
+\section{\textbf{Data Management Plan}}
 
-% ============================================================
-% ==================== REFERENCES =============================
-% ============================================================
+\vspace{-0.5em}
 
-\newpage
-\bibliographystyle{apalike}
-\bibliography{references}
+\subsection{\bf Public Good}
 
+This research supports the University of Exeter's aim for all of it's activities to have
+positive impacts on its stakeholders, as well as improve the living and studying quality for students\cite{University_of_Exeter2021-td}.
+
+Previous research shows that young adults struggle with financial literacy\cite{Lusardi2019-pt}, which has impacts on 
+investment behaviours\cite{Rodriguez-Correa2025-ld}. Findings from this research will influence the development of 
+financial education initiatives across all University courses, benefiting thousands of students. 
+The potential reduction in financial pressures will meet the University's purpose
+through public benefit research as outlined in the University of Exeter's Research Ethics Framework\cite{University_of_Exeter2022-ll}.
+
+\vspace{-0.5em}
+
+\subsection{\bf Data Description}
+This study will collect primary quantitative survey data from students at the University of Exeter. 
+The final anonymised dataset will include: demographic data, consisting of background information on University year, 
+field of study and investment experience.
+As well as, literacy assessments assessing objective and subjective knowledge based around finance and digital skills. 
+Finally, behavioural data will capture how students use investment platforms and allows the quantification 
+of investment behaviours. No identifiable information is collected, ensuring GDPR compliance\cite{European_Union2020-cw} as required
+by the Research Ethics Framework\cite{University_of_Exeter2022-ll}.
+
+This dataset will allow for multivariate analyses to explore relationships between financial literacy, 
+digital literacy, and investment behaviours as well as comparisons across student subgroups.
+
+\vspace{-0.5em}
+
+\subsection{\bf Data Collection}
+
+Data collection will occur through a survey on Microsoft Forms, as it has University approval, aimed at University of Exeter
+students. To ensure the quality of data collection, 10 -- 20 students will complete a pilot study to refine questions and 
+validate completion time, and collection methods. Recruitment will occur via the University email list, campus presence,
+and students' guild channels, aiming for 1000 participants to ensure statistical power.
+
+The dataset will follow FAIR principles\cite{Go_fair2017-sd}, with consistent naming conventions, 
+and a CSV format with UTF-8 encoding. Anonymity will promote honest responses to improve the validity of the analyses. 
+To ensure institutional consent compliance, the University Participant 
+Information Sheets and Consent Forms will be used to gain informed consent from participants as required by the Research Ethics Framework\cite{University_of_Exeter2022-ll}.
+
+\vspace{-0.5em}
+
+\subsection{\bf Data Storage and Security}
+
+The research team will securely store all data on the University-approved Research Data Storage\cite{University_of_Exeter2025-mq}, 
+allowing for encryption, access control and automated backups. 
+This ensures Code of Good Practice in the Conduct of Research compliance\cite{University_of_Exeter2024-ih}.
+
+Only the lead researcher and their supervising team will have access and only through their official University credential before it is
+stored openly.
+The team will export the data directly from the survey platform to this secure storage, to mitigate potential data interception complications.
+
+In the event of data transfer, only secure and encrypted channels will
+be permitted, with no storage on personal or unencrypted devices.
+These measures will ensure confidentiality, integrity, and GDPR compliance\cite{European_Union2020-cw}.
+Futhermore, a data protection impact assessment 
+will be completed as required by the Research Ethics Framework\cite{University_of_Exeter2022-ll} to identify and mitigate any potential risks.
+
+Finally, primary data will be retained for 10 years post-completion as stated within the
+Code of Good Practice in the Conduct of Research\cite{University_of_Exeter2024-ih}, allowing for further research or replication.
+
+\vspace{-0.5em}
+
+\subsection{\bf Data Management, Documentation, and Curation}
+
+Documentation including variable names, how responses are encoded along with the response categories shall be stored
+in a data dictionary alongside the data file.
+Also, a file containing metadata including survey structure, collection dates, consent procedures, 
+and data cleaning steps will be stored with the data to allow for reproduction.
+File naming conventions and folder structures will also be consistent and descriptive, to ensure others can understand 
+and use the data effectively. 
+
+To support long-term access and transparency, 
+the dataset and documentation will be prepared for archiving in University's Open Research Exeter (ORE) repository\cite{University_of_Exeter2017-wk},
+to allow for open access and reuse by other researchers.
+
+\vspace{-0.5em}
+
+\subsection{\bf Data Preservation}
+As stated in Section 1.5, final datasets and documentation will be archived in the University's ORE repository\cite{University_of_Exeter2017-wk}.
+Data will be stored in multiple formats (CSV, TXT, XLSX) with metadata to support reusability.
+Access conditions will be defined based on ethical approval and consent. Also, data shall be retained for a minimum of 10 years
+as stated in Section 1.4.
+
+\vspace{-0.5em}
+
+\subsection{\bf Data Sharing and Access}
+
+As discussed in Section 1.5, the ORE repository\cite{University_of_Exeter2017-wk} will store the data and the analysis 
+to support research transparency as it is openly accessible. 
+Reporting analysis findings to University wellbeing services, student support services, 
+and the Students' Guild will help inform practical interventions. Finally, if participants request a summary of the results, they will
+be provided with one to comply with GDPR\cite{European_Union2020-cw}.
+
+%-------------------------------------------------------%
+\vspace{-1em}
+
+\section{\textbf{Ethics and Privacy Review}}
+
+\subsection{Ethics and Privacy}
+
+This study presents a low level of ethical risk. It involves voluntary participation in an anonymous 
+online survey with no collection of sensitive data. All participants will 
+receive an information sheet and consent form outlining the purpose of the study, their rights, 
+and how the data will be used. To mitigate any other risks related to privacy,
+no IP addresses will be collected, and all data will be stored securely on University-approved 
+platforms with controlled access. Along with this, to avoid any potential distress or anxiety caused financial questions,
+students will be provided with resources for financial support and counselling services, 
+as well as the option to withdraw from the survey and study at any time without penalty.
+Also, ethical approval will be acquired through the University of Exeter’s research 
+ethics process to ensure full compliance with institutional standards.
+
+\vspace{-0.75em}
+
+\subsection{Relevant Policies}
+This study complies with GDPR and the Data Protection Act 2018 governing lawful handling of 
+personal data\cite{European_Union2020-cw},\cite{UK_Government2018-sd}.
+It adheres to the University of Exeter's Research Ethics Framework\cite{University_of_Exeter2022-ll}, 
+Ethics Policy\cite{University_of_Exeter2021-td}, 
+Code of Good Practice in the Conduct of Research\cite{University_of_Exeter2024-ih}, and Open Access and 
+Research Data Management Policy\cite{University_of_Exeter2017-wk}, which govern data storage, retention, and sharing.
+All procedures follow these frameworks to ensure legal, ethical, and institutional compliance.
+
+\vspace{-1em}
+%-------------------------------------------------------%
+% References
+\begin{spacing}{0.5}  
+    \bibliographystyle{IEEEtran}
+    \bibliography{../references/plan_references}
+\end{spacing}
+
+%-------------------------------------------------------%
 \end{document}
